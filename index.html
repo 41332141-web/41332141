@@ -4,131 +4,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nothing Ear｜耳機品牌介紹</title>
-<style>
-* { box-sizing: border-box; }
+<title>Nothing 耳機介紹網站</title>
+
+<style type="text/css">
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  background: #f5f5f5;
-  color: #111;
-  font-family: Arial, "Noto Sans TC", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: Verdana, "Noto Sans TC", sans-serif;
 }
-header {
-  background: #111;
-  color: white;
-  padding: 22px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* Main menu settings */
+
+#centeredmenu {
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 90%;
+    z-index: 1000;
 }
-header a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
+
+/* Top menu items */
+
+#centeredmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    position: relative;
+    right: 50%;
 }
-.hero {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+
+#centeredmenu ul li {
+    margin: 0 0 0 1px;
+    padding: 0;
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 1px;
 }
-.hero h1 { font-size: 55px; margin: 0; }
-.hero p { color: #bbb; font-size: 18px; }
-section {
-  padding: 65px 10%;
-  text-align: center;
+
+#centeredmenu ul li a {
+    display: block;
+    margin: 0;
+    padding: .8em 1em .6em;
+    font-size: 1em;
+    line-height: 1em;
+    background: #ddd;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
 }
-h2 { font-size: 32px; }
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 20px;
+
+#centeredmenu ul li.active a {
+    color: #fff;
+    background: #000;
 }
-.card {
-  background: white;
-  padding: 28px;
-  border-radius: 12px;
+
+#centeredmenu ul li a:hover {
+    background: #000;
+    color: #fff;
+    border-bottom: 1px solid #000;
 }
-.card img {
-  width: 100%;
-  max-width: 220px;
-  height: 180px;
-  object-fit: contain;
+
+/* Submenu items */
+
+#centeredmenu ul ul {
+    display: none;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    right: auto;
+    width: 12em;
+    z-index: 1001;
 }
-footer {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 25px;
+
+#centeredmenu ul ul li {
+    left: auto;
+    margin: 0;
+    clear: left;
+    width: 100%;
 }
+
+#centeredmenu ul ul li a,
+#centeredmenu ul li.active li a,
+#centeredmenu ul li:hover ul li a {
+    font-size: .85em;
+    font-weight: normal;
+    background: #eee;
+    color: #444;
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+#centeredmenu ul ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Show submenu on hover */
+
+#centeredmenu ul li:hover ul {
+    display: block;
+}
+
+/* iframe settings */
+
+iframe {
+    display: block;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1100px;
+    height: 650px;
+    border: 1px solid #ddd;
+}
+
 </style>
 </head>
+
 <body>
 
-<header>
-  <strong>NOTHING.</strong>
-  <nav>
-    <a href="#about">品牌介紹</a>
-    <a href="#products">產品介紹</a>
-    <a href="#features">特色</a>
-  </nav>
-</header>
+<!-- Navigation menu -->
 
-<div class="hero">
-  <h1>NOTHING EAR</h1>
-  <p>科技與設計的全新結合</p>
-  <p>探索 Nothing 耳機的透明美學</p>
+<div id="centeredmenu">
+    <ul>
+
+        <li class="active">
+            <a href="home.html" target="main">首頁</a>
+        </li>
+
+        <li>
+            <a href="#">品牌介紹</a>
+            <ul>
+                <li><a href="brand.html" target="main">品牌故事</a></li>
+                <li><a href="idea.html" target="main">品牌理念</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">耳機介紹</a>
+            <ul>
+                <li><a href="ear.html" target="main">Nothing Ear</a></li>
+                <li><a href="ear-a.html" target="main">Nothing Ear (a)</a></li>
+                <li><a href="ear-open.html" target="main">Nothing Ear (open)</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">產品特色</a>
+            <ul>
+                <li><a href="design.html" target="main">透明設計</a></li>
+                <li><a href="sound.html" target="main">音質與降噪</a></li>
+            </ul>
+        </li>
+
+    </ul>
 </div>
 
-<section id="about">
-  <h2>關於 Nothing</h2>
-  <p>
-    Nothing 是一家科技品牌，以獨特的透明設計、
-    簡約風格與創新理念受到關注。
-    品牌希望透過不同的設計方式，
-    讓科技產品展現更多個性。
-  </p>
-</section>
+<!-- Main content area -->
 
-<section id="products">
-  <h2>產品介紹</h2>
-  <div class="products">
-    <div class="card">
-      <h3>Nothing Ear</h3>
-      <p>主打音質、主動降噪與透明外觀設計。</p>
-    </div>
-    <div class="card">
-      <h3>Nothing Ear (a)</h3>
-      <p>兼具時尚外觀與日常使用功能的無線耳機。</p>
-    </div>
-    <div class="card">
-      <h3>Nothing Ear (open)</h3>
-      <p>採用開放式設計，提供不同的聆聽體驗。</p>
-    </div>
-  </div>
-</section>
-
-<section id="features">
-  <h2>品牌特色</h2>
-  <div class="products">
-    <div class="card">
-      <h3>透明設計</h3>
-      <p>以透明外觀呈現內部結構。</p>
-    </div>
-    <div class="card">
-      <h3>科技功能</h3>
-      <p>結合降噪、觸控與智慧連線功能。</p>
-    </div>
-    <div class="card">
-      <h3>簡約美學</h3>
-      <p>以黑白色系打造獨特品牌形象。</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Nothing Ear 品牌介紹｜學校作業</p>
-</footer>
+<iframe src="home.html" name="main"></iframe>
 
 </body>
 </html>
